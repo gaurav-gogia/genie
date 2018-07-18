@@ -26,4 +26,6 @@ A smol &amp; simple go web app project boiler plate generator that takes care of
 4. Make pull request on **development** branch!
 5. Enjoy!
 
+Take a look at project's wiki to understand the different parts of this little project.
+
 Please follow contribution guidelines to make things easy for everyone. Thanks ^.^
