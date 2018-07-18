@@ -21,3 +21,12 @@ A smol &amp; simple go web app project boiler plate generator that takes care of
 
 ## Contribution:
 The project is open source so feel free to raise issues, make pull requests.
+
+## Basic Guidelines:
+1. Star & Fork the repo.
+2. Propose an issue.
+3. Wait until that issue is assigned to you.
+4. Make pull request on **development** branch!
+5. Enjoy!
+
+Please follow contribution guidelines to make things easy for everyone. Thanks ^.^
