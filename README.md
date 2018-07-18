@@ -1,8 +1,12 @@
-# genie
+# Genie
 A smol &amp; simple go web app project boiler plate generator that takes care of registering CRUD handlers, CORS, safe headers, logging, multi-threading, mongodb connection.
 
+<p align="center">
+  <img src="https://github.com/DesmondANIMUS/genie/blob/master/genie.png">
+</p>
+
 ## Mission
-1. Minimalistic: boiler plate code.
+1. Minimalistic: Minimum, yet useful amount of boiler plate code generation.
 2. Productivity: Let developers spend more time writing the code that matters &amp; less time on project setup.
 3. Speed: Code generation should be as fast as possible.
 
@@ -15,5 +19,11 @@ A smol &amp; simple go web app project boiler plate generator that takes care of
 6. Adds gorilla mux for all handlers.
 7. Blazing Fast! Works almost instantly!
 
-## Contribution:
-The project is open source so feel free to raise issues, make pull requests.
+### Contribution Guidelines (subject to change):
+1. Star & Fork the repo.
+2. Propose an issue.
+3. Wait until that issue is assigned to you.
+4. Make pull request on **development** branch!
+5. Enjoy!
+
+Please follow contribution guidelines to make things easy for everyone. Thanks ^.^
