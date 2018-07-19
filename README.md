@@ -5,6 +5,15 @@ A smol &amp; simple go web app project boiler plate generator that takes care of
   <img src="https://github.com/DesmondANIMUS/genie/blob/master/genie.png">
 </p>
 
+## How to Use
+1. go get -u -v github.com/DesmondANIMUS/genie
+2. Navigate to your WORKDIR, defaults:
+  a. Windows: %userprofile%/go/src/github.com/<github_username>/
+  b. Linux & MacOS: $HOME/go/src/github.com/<github_username>/
+3. Make sure that **"go/bin"** folder has been added to environment variable **Path**
+4. genie <project_name> <github_username>
+5. Enjoy!
+
 ## Mission
 1. Minimalistic: Minimum, yet useful amount of boiler plate code generation.
 2. Productivity: Let developers spend more time writing the code that matters &amp; less time on project setup.
