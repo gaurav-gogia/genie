@@ -11,7 +11,7 @@ A smol &amp; simple go web app project boiler plate generator that takes care of
   a. Windows: %userprofile%/go/src/github.com/<github_username>/
   b. Linux & MacOS: $HOME/go/src/github.com/<github_username>/
 3. Make sure that **"go/bin"** folder has been added to environment variable **Path**
-4. genie <project_name> <github_username>
+4. genie <project_name>
 5. Enjoy!
 
 ## Mission
