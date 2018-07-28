@@ -3,19 +3,23 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 )
 
 func main() {
-	if len(os.Args) < 3 {
-		fmt.Println("Usage: genie <project_name> <github user_name>")
+	if len(os.Args) < 2 {
+		fmt.Println("Usage: genie <project_name>")
 		return
 	}
+
+	path, _ := os.Getwd()
+	data := strings.Split(path, "/")
 
 	fmt.Println("Generating Folders....")
 	generateFolders(os.Args[1])
 
 	fmt.Println("Generating Boiler Plate....")
-	generatePages(os.Args[1], os.Args[2])
+	generatePages(os.Args[1], data[len(data)-1])
 
 	fmt.Println("Done ^.^")
 }
