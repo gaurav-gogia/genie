@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center" width="100px" height="100px">
   <img src="https://github.com/DesmondANIMUS/genie/blob/master/genie.png">
 </p>
 
