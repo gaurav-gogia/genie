@@ -15,9 +15,9 @@ A smol &amp; simple Go web app project boiler plate generator that takes care of
 5. Enjoy!
 
 ## Mission
-1. Minimalistic: Minimum, yet useful amount of boiler plate code generation.
-2. Productivity: Let developers spend more time writing the code that matters &amp; less time on project setup.
-3. Speed: Code generation should be as fast as possible.
+1. **Minimalistic**: Minimum, yet useful amount of boiler plate code generation.
+2. **Productivity**: Let developers spend more time writing the code that matters &amp; less time on project setup.
+3. **Speed**: Code generation should be as fast as possible.
 
 ## Features:
 1. Generates minimal boiler plate code to get you started.
