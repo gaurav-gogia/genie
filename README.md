@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/De-ma/genie/blob/master/genie-header.png">
+  <img src="https://github.com/DesmondANIMUS/genie/blob/master/genie-header.png">
 </p>
 
 # Genie
