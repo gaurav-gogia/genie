@@ -28,13 +28,10 @@ A smol &amp; simple Go web app project boiler plate generator that takes care of
 6. Adds gorilla mux for all handlers.
 7. Blazing Fast! Works almost instantly!
 
-### Contribution Guidelines (subject to change):
-1. Star & Fork the repo.
-2. Propose an issue.
-3. Wait until that issue is assigned to you.
-4. Make pull request on **development** branch!
-5. Enjoy!
-
-Take a look at project's wiki to understand the different parts of this little project.
+### Contribution Guidelines :
+1. Fork the repo and create your branch from master.
+2. Add the changes/fixes! 
+3. Make sure your code lints.
+4. Issue that pull request (against `development` branch)!
 
 Please follow contribution guidelines to make things easy for everyone. Thanks ^.^
