@@ -8,8 +8,8 @@ A smol &amp; simple Go web app project boiler plate generator that takes care of
 ## How to Use
 1. go get -u -v github.com/DesmondANIMUS/genie
 2. Navigate to your WORKDIR, defaults: <br/>
-  a. Windows: %userprofile%/go/src/github.com/<github_username>/ <br/>
-  b. Linux & MacOS: $HOME/go/src/github.com/<github_username>/ <br/>
+  a. Windows: `%userprofile%/go/src/github.com/<github_username>/` <br/>
+  b. Linux & MacOS: `$HOME/go/src/github.com/<github_username>/` <br/>
 3. Make sure that **"go/bin"** folder has been added to environment variable **Path**
 4. genie <project_name>
 5. Enjoy!
