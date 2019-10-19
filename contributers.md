@@ -4,3 +4,4 @@
 
 4. [Diego Cezário](https://github.com/dcezario)
 5. [Prakhar Pandey](https://github.com/prakharvk)
+6. [Tau](https://github.com/tauraijob)
