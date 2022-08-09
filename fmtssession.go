@@ -2,17 +2,17 @@ package main
 
 import "fmt"
 
-func fmtsessionpage(name, username string) string {
+func fmtsessionpage(name string) string {
 	format1 := fmt.Sprintf(
 		`package %s
 		`, name+"help")
 
 	import1 := fmt.Sprintf(`
-import (		
-	"github.com/%s/%s/%s"
+import (
+	"%s/%s"
 	"gopkg.in/mgo.v2"
 )
-	`, username, name, name+"model")
+	`, name, name+"model")
 
 	format2 := fmt.Sprintf(
 		`

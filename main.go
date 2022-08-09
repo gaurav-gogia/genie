@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
-	"strings"
+	"path/filepath"
 )
 
 func main() {
@@ -12,20 +12,28 @@ func main() {
 		return
 	}
 
-	path, _ := os.Getwd()
-	data := strings.Split(path, "/")
+	projectName := os.Args[1]
 
 	fmt.Println("Generating Folders....")
-	generateFolders(os.Args[1])
+	generateFolders(projectName)
 
 	fmt.Println("Generating Boiler Plate....")
-	generatePages(os.Args[1], data[len(data)-1])
+	generatePages(projectName)
 
 	fmt.Println("Done ^.^")
+
+	cwd, err := os.Getwd()
+	handle(err)
+	projectPath := filepath.Join(cwd, projectName)
+
+	fmt.Printf(`Next steps:
+	CD into %s
+	Run: 'go mod init %s'
+	Run: 'go mod tidy'`, projectPath, projectName)
 }
 
-func generatePages(name, username string) {
-	page := fmtmainpage(name, username)
+func generatePages(name string) {
+	page := fmtmainpage(name)
 	createpage(page, "./"+name+"/main.go")
 
 	createpage("package "+name+"db", "./"+name+"/"+name+"db/dbi.go")
@@ -34,15 +42,15 @@ func generatePages(name, username string) {
 
 	createpage("package "+name+"link", "./"+name+"/"+name+"link/link.go")
 
-	page = fmtgetpage(name, username)
+	page = fmtgetpage(name)
 	createpage(page, "./"+name+"/"+name+"route/get.go")
-	page = fmtpostpage(name, username)
+	page = fmtpostpage(name)
 	createpage(page, "./"+name+"/"+name+"route/post.go")
 
 	createpage("package "+name+"model", "./"+name+"/"+name+"model/model.go")
 	page = fmtconstantpage(name)
 	createpage(page, "./"+name+"/"+name+"model/constant.go")
-	page = fmtsessionpage(name, username)
+	page = fmtsessionpage(name)
 	createpage(page, "./"+name+"/"+name+"help/session.go")
 
 	page = fmthelpage(name)
@@ -67,5 +75,12 @@ func createpage(page, path string) {
 	_, err = f.WriteString(page)
 	if err != nil {
 		panic(err)
+	}
+}
+
+func handle(err error) {
+	if err != nil {
+		fmt.Printf("\n\n%v\n\n", err)
+		os.Exit(1)
 	}
 }
