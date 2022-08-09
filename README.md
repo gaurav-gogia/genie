@@ -10,7 +10,7 @@ A smol &amp; simple Go web app project boiler plate generator that takes care of
 2. cd <any_dir/genie>
 3. go install
 4. Navigate to your any dir
-5. Make sure that **"go/bin"** folder has been added to environment variable **Path**
+5. Make sure that **"$HOME/go/bin"** folder has been added to environment variable **Path**
 6. genie <project_name>
 7. Enjoy!
 
