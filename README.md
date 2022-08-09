@@ -14,6 +14,9 @@ A smol &amp; simple Go web app project boiler plate generator that takes care of
 6. genie <project_name>
 7. Enjoy!
 
+### Caveats
+Make sure you have MongoDB Server installed and running. Generated code makes connections with MongoDB by default. It'll panic if it cannot connect to a running instance. You may switch to a different database post code generation if it doesn't fit your requirements.
+
 ## Mission
 - **Minimalistic**: Minimum, yet useful amount of boiler plate code generation.
 - **Productivity**: Let developers spend more time writing the code that matters &amp; less time on project setup.
