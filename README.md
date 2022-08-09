@@ -6,13 +6,13 @@
 A smol &amp; simple Go web app project boiler plate generator that takes care of registering CRUD handlers, CORS, safe headers, logging, multi-threading, mongodb connection.
 
 ## How to Use
-1. go get -u -v github.com/DesmondANIMUS/genie
-2. Navigate to your WORKDIR, defaults: <br/>
-  a. Windows: `%userprofile%/go/src/github.com/<github_username>/` <br/>
-  b. Linux & MacOS: `$HOME/go/src/github.com/<github_username>/` <br/>
-3. Make sure that **"go/bin"** folder has been added to environment variable **Path**
-4. genie <project_name>
-5. Enjoy!
+1. git clone <any_dir>
+2. cd <any_dir/genie>
+3. go install
+4. Navigate to your any dir
+5. Make sure that **"$HOME/go/bin"** folder has been added to environment variable **Path**
+6. genie <project_name>
+7. Enjoy!
 
 ## Mission
 - **Minimalistic**: Minimum, yet useful amount of boiler plate code generation.
