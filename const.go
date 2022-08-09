@@ -65,13 +65,13 @@ func startServer(srv *http.Server) {
 const constantpage = `
 // Global constnats for entire application
 const (
-	Port             = ":8080"	
+	Port             = ":8080"
 	LevelInfo        = "INFO"
 	LevelWarning     = "WARNING"
 	LevelError       = "ERROR"
 	ConnectionString = "mongodb://localhost/"
 	AdminModelString = "AdminModel"
-	DataModelString  = "DataModel"	
+	DataModelString  = "DataModel"
 	Response         = "200"
 	ErrResponse      = "500"
 `
@@ -152,14 +152,14 @@ func Delete(w http.ResponseWriter, r *http.Request) {
 const getroutepage = `
 // Read post/put API for reading something
 func Read(w http.ResponseWriter, r *http.Request) {
-	start := time.Now()	
+	start := time.Now()
 `
 const sessionpage1 = `
 // Session global variable for mongodb global session
-var Session *mgo.Session
+var Session *mongo.Client
 
 // ConnectDB function creates a global connection to the database
-func ConnectDB() *mgo.Session {
+func ConnectDB() *mongo.Client {
 `
 const sessionpage2 = `
 	if err != nil {

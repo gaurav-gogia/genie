@@ -19,7 +19,7 @@ func fmtmainpage(name string) string {
 	format1 := fmt.Sprintf(
 		`
 	%s.Session = %s.ConnectDB()
-	defer %s.Session.Close()
+	defer %s.Session.Disconnect(context.Background())
 		`, name+"help", name+"help", name+"help")
 
 	format2 := fmt.Sprintf(`		Addr:         %s.Port,`, name+"model")
